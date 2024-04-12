@@ -1,0 +1,13 @@
+{
+  "scripts": {
+  "start": "nodemon bot.js"
+},
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@grammyjs/conversations": "^1.2.0",
+    "grammy": "^1.22.4",
+    "nodemon": "^3.1.0"
+  }
+}
