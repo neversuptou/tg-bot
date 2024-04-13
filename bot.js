@@ -65,7 +65,9 @@ bot.command('triggers', (ctx) => __awaiter(void 0, void 0, void 0, function* () 
         for (let i = 0; i < triggers.length; i++) {
             key.push(triggers[i].name);
         }
-        yield ctx.reply(`Все триггеры: ${key}`);
+        yield ctx.reply(`Все ваши триггеры: ${key}`), {
+            parse_mode: "MarkdownV2"
+        };
     }
     else {
         ctx.reply(`Триггеры не найдены`);

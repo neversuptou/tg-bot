@@ -71,7 +71,9 @@ bot.command('triggers', async (ctx) => {
     for (let i = 0; i < triggers.length; i++) {
       key.push(triggers[i].name);
     }
-    await ctx.reply(`Все ваши триггеры:<br> ${key}`);
+    await ctx.reply(`Все ваши триггеры: ${key}`), { 
+      parse_mode: "MarkdownV2" 
+    };
   } else {
     ctx.reply(`Триггеры не найдены`);
   }
